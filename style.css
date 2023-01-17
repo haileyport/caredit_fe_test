@@ -198,3 +198,143 @@ p {
 .menu li:hover a span:before {
     opacity: 1;
 }
+
+/* 중고전기차 매매 플랫폼 */
+/* tabcon > car_ser > wrapper > con_txt con_tit blue sub_txt nodot btn_wrap google_btn apple_btn*/
+
+/* .contents > div {
+    background-repeat: no-repeat;
+    background-position: right center;
+} */
+
+.contents {
+    background-color: #F8F8F8;
+}
+
+.contents > div {
+    padding-top: 183px;
+    padding-bottom: 296px;
+    background: url('./img/pic_car_service.png') no-repeat right;
+    background-size: 459px;
+}
+
+.con_title strong {
+    font-size: 40px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.blue_txt {
+    margin-bottom: 16px;
+    font-size: 28px;
+    line-height: 1;
+    color: #218DE9;
+    font-weight: 900;
+}
+
+.sub_text {
+    margin-top: 48px;
+}
+
+.sub_txt > p {
+    margin-bottom: 16px;
+    color: #29363F;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.car .sub_txt > div {
+    margin-bottom: 58px;
+}
+
+.sub_txt > div p {
+    font-size: 18px;
+    line-height: 0.7;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: #29363F;
+    opacity: 0.5;
+}
+
+.car .sub_txt ul {
+    width: 596px;
+    margin-bottom: 44px;
+}
+
+.car .sub_txt ul:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.sub_txt ul {
+    list-style:none;
+    padding-left:0px;
+}
+
+.car .sub_txt ul li {
+    float:left; 
+}
+
+.car .sub_txt ul li:nth-of-type(odd) {
+    width: 135px;
+}
+.car .sub_txt ul li:nth-of-type(even) {
+    width: 364px;
+    margin-left: 93px;
+}
+
+.sub_txt ul li {
+    position: relative;
+    font-size: 17px;
+    line-height: 1.77;
+    font-weight: 400;
+    color: rgba(41, 54, 63, 0.5);
+    padding-left: 12px;
+}
+
+.sub_txt ul li:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 13px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background: #218DE9;
+}
+
+.sub_txt ul li.nodot:before {
+    display: none
+}
+
+/* btn */
+.btn_zone a {
+    display: inline-block;
+    width: 180px;
+    font-size: 14px;
+    height: 48px;
+    color: white;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 4px;
+    transition: all .3s ease;
+}
+
+.btn_zone a + a { margin-left: 4px; }
+
+.btn_zone .google_btn {
+    width: 166px;
+    text-indent: -9999px;
+    background: white url('./img/ico_google_play.png') no-repeat center;
+    background-size: 95%;
+}
+
+.btn_zone .apple_btn {
+    whidth: 160px;
+    text-indent: -9999px;
+    background: white url('./img/ico_apple_store.jpg') no-repeat center;
+    background-size: 92.5%;
+}
