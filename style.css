@@ -201,15 +201,28 @@ p {
 
 /* 중고전기차 매매 플랫폼 */
 
-.contents {
+.contents > div {
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.contents > div > div {
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.contents .car {
     background-color: #F8F8F8;
 }
 
-.contents > div {
+.car > div {
     padding-top: 183px;
     padding-bottom: 296px;
-    background: url('./img/pic_car_service.png') no-repeat right;
+    background-image: url('./img/pic_car_service.png');
     background-size: 459px;
+}
+
+.contents .car > div {
 }
 
 .con_title strong {
@@ -304,8 +317,17 @@ p {
     display: none
 }
 
-/* btn */
+/* 온라인 전기차 배터리 진단 */
 
+.service {
+    padding-top: 240px;
+    padding-bottom: 296px;
+    background-image: url('./img/pic_online.png');
+    background-size: 600px;
+}
+
+
+/* btn */
 .btn_zone a {
     display: inline-block;
     width: 180px;
@@ -332,4 +354,15 @@ p {
     text-indent: -9999px;
     background: white url('./img/ico_apple_store.jpg') no-repeat center;
     background-size: 92.5%;
+}
+
+.btn_zone .naver_btn {
+    width: 226px;
+    text-indent: -9999px;
+    background: white url('./img/ico_naver_btn.png') no-repeat center;
+    background-size: 100%;
+}
+
+.mt30 {
+    margin-top: 30px;
 }
