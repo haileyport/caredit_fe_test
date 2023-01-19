@@ -60,7 +60,6 @@ p {
     top: 305px;
     left: 280px;
     color: white;
-    /* fadeInDown animation 추가 필요 */
 }
 
 .intro_ment {
@@ -365,4 +364,278 @@ p {
 
 .mt30 {
     margin-top: 30px;
+}
+
+/* animation */
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+  
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/* ***********media query*********** */
+
+@media all and (max-width:1200px) {
+
+	.wrap {
+        width:100%; padding-left:40px; padding-right:40px;
+    }
+
+    /* btn */
+	.btn_zone a {
+        width:140px; height:40px; line-height:38px;
+    }
+	.btn_zone a + a {
+        margin-left:0;
+    }
+	.btn_zone .google_btn {
+        width:138px;
+    }
+	.btn_zone .apple_btn {
+        width:133px;
+    }
+	.btn_zone .naver_btn {
+        width:190px;
+    }
+
+	/* banner */
+	.high_text {
+        left:40px;
+    }
+    .high_text .intro_ment > p {
+        font-size: 13px;
+    }
+	.high_text .title {
+        width:460px;
+        font-size:62px;
+    }
+	.high_text .title {
+        width:460px;
+        font-size:62px;
+    }
+	.high_text .title strong:before {
+        width:120px;
+    }
+    .high_text {
+        left:40px;
+        width:380px;
+    }
+	.high_text .intro_ment {
+        font-size:14px;
+    }
+	.high_text .title {
+        font-size:46px;
+    }
+	.high_text .title strong:before {
+        width:120px;
+    }
+
+	.menu {
+        width:100%;
+    }
+	.menu ul.wrap {
+        font-size:16px;
+        padding:0;
+    }
+	
+    /* 중고전기차 매매 플랫폼 */
+    .car > div {
+        background-position:right 25px center; 
+        background-size:332px;
+    }
+    .blue_txt {
+        margin-bottom:10px; 
+        font-size:25px;
+    }
+	.con_title strong {
+        font-size:35px;
+    }
+	.sub_text > p {
+        font-size:18px;
+    }
+	.sub_txt > div p {
+        font-size:15px;
+    }
+	.sub_txt ul li {
+        font-size:15px;
+    }
+
+    /* 온라인 전기차 배터리 진단 */
+    .service {
+        background-position:right 25px center; 
+        background-size:370px;
+    }
+}
+
+@media all and (max-width:940px) {
+
+	/* banner */
+	.high_text {left:25px;}
+	.btn_zone {margin-top:35px;}
+	.btn_zone a {width:110px; height:30px; line-height:28px;}
+	.btn_zone a span {font-size:12px; padding-right:17px; background-position:right 9px; background-size:10px;}
+	.btn_zone .google_btn {width:104px;}
+	.btn_zone .apple_btn {width:100px;}
+	.btn_zone .naver_btn {width:152px;}
+
+	/* menu */
+	.menu li a span {font-size:14px;}
+
+    /* 중고전기차 매매 플랫폼 */
+	.blue_txt {font-size:18px;}
+	.con_title strong {font-size:28px;}
+	.sub_txt {margin-top:35px;}
+	.sub_txt > p {font-size:15px;}
+	.sub_txt > div p {font-size:13px;}
+	.sub_txt ul li {font-size:13px; padding-left:9px;}
+	.sub_txt ul li:nth-of-type(even) {margin-left:24px;}
+	.sub_txt ul li:before {top:10px; width:3px; height:3px;}
+	.car > div {padding-top:120px; padding-bottom:125px; background-size:260px;}
+    
+    /* 온라인 전기차 배터리 진단 */
+    .service {padding-top:120px; padding-bottom:150px; background-size:320px;}
+}
+
+@media all and (max-width:780px) {
+	body {font-size:14px;}
+
+	.btn_zone a {width:93px; height:28px; line-height:26px;}
+	.btn_zone a span {font-size:11px; background-size:11px; background-position:right 8px;}
+	.btn_zone .google_btn {width:86px;}
+	.btn_zone .apple_btn {width:83px;}
+	
+	/* banner */
+	.high_text .title {width:334px; font-size:45px;}
+	.high_text .title strong:before {width:80px; height:5px;}
+
+    .head {padding:160px 0 130px;}
+	.high_text {width:324px;}
+	.high_text .intro_ment > p {font-size:11px;}
+	.high_text .title {margin-top:10px; font-size:35px; width:270px;}
+	.high_text .title strong:before {width:80px; height:5px;}
+    
+	.menu ul.wrap {font-size:12px;}
+	.menu ul li {height:60px;}
+	.menu ul li:before {height:15px;}
+	.menu ul li a span {padding:20px 0; font-size:12px;}
+    
+    /* 중고전기차 매매 플랫폼 */
+	.blue_txt {margin-bottom:5px; font-size:12px;}
+	.con_title strong {font-size:20px;}
+	.sub_txt > p {font-size:13px;}
+	.sub_txt > div p {font-size:12px;}
+	.sub_txt > div {width:50%;}
+	.sub_txt > div p {display:inline;}
+	.sub_txt ul {width:50% !important;}
+    .sub_txt ul li {font-size: 12px;}
+	.sub_txt ul li:nth-of-type(even) {margin-left:0 !important; width:50% !important;}
+
+	.service {background-size:270px;}
+	
+	.btn_zone a.google_btn {width:138px; height:40px;}
+	.btn_zone a.apple_btn {width:133px; height:40px;}
+	.btn_zone a.naver_btn {width:190px; height:40px;}
+}
+
+@media all and (max-width:640px) {	
+	body {font-size:12px;}
+
+	.btn_zone a {width:140px; height:35px; line-height:33px; margin-bottom:2px;}
+	.btn_zone a span {padding-right:17px; background-position:right 11px; background-size:10px;}
+	.btn_zone .google_btn {width:121px;}
+	.btn_zone .apple_btn {width:116px;}
+	.btn_zone .naver_btn {width:172px;}
+	
+    /* banner */
+	.high_text .title {width:260px; font-size:35px;}
+	.high_text .title strong:before {width:60px;}
+	.high_text .btn_zone a {width:140px; line-height:30px;}
+	.head {padding:100px 0 80px;}
+	.high_text .intro_ment {font-size:10px;}
+	.high_text .title {font-size:28px; width:216px;}
+	.high_text .title strong:before {width:60px;}
+
+	.menu ul.wrap {font-size:12px;}
+	.menu ul li {width:14%;height:60px;}
+	.menu ul li:first-of-type {width:25%;}
+	.menu ul li:nth-of-type(2) {width:28%;}
+	.menu ul li:nth-of-type(3) {width:19%;}
+	.menu ul li:before {height:15px;}
+	.menu ul li a span {padding:20px 0;}
+
+	.car > div {padding-top:70px; padding-bottom:70px; background-position:center top 140px !important; background-size:200px;}
+	.sub_txt {margin-top:300px;}
+	.service {padding-top:70px; padding-bottom:70px; background-position:center top 130px !important; background-size:260px;}
+	.service .sub_txt {margin-top:305px;}
+	
+	.sub_txt > p {margin-bottom:5px;}
+	.sub_txt ul li {word-break:keep-all;}
+	.sub_txt ul {width:100% !important; margin-bottom:30px;}
+	.sub_txt ul li:nth-of-type(odd) {width:35% !important;}
+	.sub_txt ul li:nth-of-type(even) {width:65% !important;}
+	.sub_txt > div {width:100%; margin-bottom:40px;}
+}
+
+@media all and (max-width:480px) {
+	.wrap {padding-left:20px; padding-right:20px;}
+
+	.btn_zone a {height:30px; width:110px; font-size:10px; line-height:28px;}
+	.btn_zone a span {font-size:10px; padding-right:17px; background-position:right 9px;}
+	.btn_zone .google_btn {width:104px;}
+	.btn_zone .apple_btn {width:100px;}
+	
+	/* banner */
+	.high_text .intro_ment {margin-right:-10px; font-size:10px;}
+	.high_text .title {width:188px; font-size:25px;}
+	.high_text .title strong:before {width:45px; height:3px;}
+
+	.high_text {width:170px;}
+	.high_text .intro_ment {line-height:1.2;}
+	.high_text .title {margin-top:5px; font-size:24px; width:185px;}
+
+	.menu ul.wrap {font-size:11px;}
+	.menu ul li {height:45px;}
+	.menu ul li:before {height:10px;}
+	.menu ul li a span {padding:15px 0; font-size:10px;}
+
+	.sub_txt > div p {word-break:keep-all;}
+	.sub_txt ul li:nth-of-type(odd),
+	.sub_txt ul li:nth-of-type(even){display:block; width:100% !important;}
+
+	.btn_zone a.google_btn {width:121px; height:35px;}
+	.btn_zone a.apple_btn {width:116px; height:35px;}
+	.btn_zone a.naver_btn {width:162px; height:35px;}
 }
